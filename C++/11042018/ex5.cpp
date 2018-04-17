@@ -32,7 +32,7 @@ char categoriaNadador(int idade){
 	
 	printf("A categoria do nadador eh %s", categoria);
 	
-	//return categoria[20];
+	return categoria[20];
 }
 
 main(){
@@ -48,7 +48,10 @@ main(){
 				goto inicio;
 			}else {
 				categoriaNadador(idade);
+				//categoria[20] = categoriaNadador(idade);
 			}
+			
+		//printf("%s", categoria);
 		
 	return 0;
 }
