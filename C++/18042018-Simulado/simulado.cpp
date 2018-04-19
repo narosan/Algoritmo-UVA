@@ -35,7 +35,8 @@ int organizaNumeros(int num1, int num2, int num3){
 
 main(){
 	setlocale(LC_ALL,"Portuguese");
-	int num1, num2, num3, media, raiz;
+	int num1, num2, num3, media;
+	float raiz;
 	char resposta[5];
 	
 	n1:
@@ -68,9 +69,11 @@ main(){
 	
 	media = (num1 + num2 + num3) / 3;
 	
+	media = float(media);
+	
 	raiz = sqrt(media);
 	
-		printf("A média é : %i\nA raiz quadrada é : %i\n\n", media, raiz);
+		printf("A média é : %i\nA raiz quadrada é : %.1f\n\n", media, raiz);
 		
 		resp:
 			printf("Você deseja continuar o programa [sim/nao] ? -> ");
