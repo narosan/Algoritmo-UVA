@@ -88,7 +88,7 @@ main(){
 				}else if(strcmp(resposta,"nao") == 0) {
 					printf("--- O programa está encerrando ---");
 				}else {
-					printf("\nResposta incorreta !\nResponsa novamente.\n\n");
+					printf("\nResposta incorreta !\nResponda novamente.\n\n");
 					goto resp;
 				}// Fim bloco que compara a resposta com sim ou não.
 			
