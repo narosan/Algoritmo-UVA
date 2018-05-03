@@ -18,13 +18,6 @@ main() {
 			i++;
 				printf("Informe um numero: ");
 				scanf("%i", &num[i]);
-					
-					if(num[i]==0){
-						
-						maior = num[i];
-						menor = num[i];
-						
-					}
 						
 					if(num[i] > maior) {
 						
