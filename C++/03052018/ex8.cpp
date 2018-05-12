@@ -8,9 +8,13 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 main(){
-	int num_char, i = 0, soma, cont = 0, med = 0;
+	
+	system("color 2");
+	
+	int num_char, i = 0, soma = 0, cont = 0, med = 0;
 	char palavra[20];
 	
 		printf("Informe uma palavra: ");
@@ -27,16 +31,24 @@ main(){
 				num_char = strlen(palavra);
 			}
 			
-			while(i <= num_char) {
-				printf("%c", palavra[i]);
-				soma += i;
-				cont++;
-				i += 2;
+			//num_char - 1 porque estava contando mais 1 indice
+			while(i <= (num_char - 1)) {
+				if(i%2 == 0){
+					soma += i;
+					cont++;
+					printf("%c\n", palavra[i]);
+				}
+				i ++;
 			}
-			
+
 		med = soma / cont;
 		
-		printf("\nExistem %i indices com valor par.\nA media desse inidices eh %i.\n", cont, med);
+		printf("Indices: \t %i\nSoma: \t %i\nMedia: \t %i", cont, soma, med);
 		
 	return 0;
 }
+			
+	
+		
+		
+
